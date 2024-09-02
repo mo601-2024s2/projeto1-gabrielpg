@@ -199,7 +199,3 @@ Foi aprendido também que a simulação de um processador depende de muitos deta
 # Desempenho do simulador conforme o Dhrystone e CoreMark
 Foi tentado realizar a simulação do *Dhrystone*, mas foram encontrados diversos erros de compilação que não puderam ser resolvidos dentro do tempo disponível. O código depende de muitas macros que eu nunca havia visto antes e não consegui entender muito bem qual era o problema da compilação. Por exemplo, ao usar o makefile do próprio repositório, aparecia um erro de que a variável `__riscv_xlen` tinha um valor inválido.
 Com relação ao CoreMark, foi possível compilá-lo e executá-lo facilmente na minha máquina x86, mas não consegui preparar o benchmark para meu simulador de RISC-V no tempo disponível. Apesar de existir um guia para portar a compilação para outras arquiteturas, o passo-a-passo era muito longo e não foi possível terminá-lo a tempo.
-
-0   2    f    7    0    7    b    3
-0000001 01111 01110 000 01111 0110011
-        x15   x14   f3  x15   tipo R
