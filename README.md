@@ -9,11 +9,11 @@ make all
 para compilar o simulador.
 Em seguida, escolha o script adequado para compilar a pasta `test`. Se o comando para compilar em riscv na sua máquina for riscv64-unknown-elf, use o comando
 ```
-python3 scripts/compile64_tests.py
+python3 test/scripts/compile64_tests.py
 ```
 Caso seu compilador seja o riscv32-unknown-elf, use o comando
 ```
-python3 scripts/compile32_tests.py
+python3 test/scripts/compile32_tests.py
 ```
 Se seu compilador for outro, por favor altere o script de compilação na linha 30:
 ```C
@@ -23,7 +23,7 @@ compile_command = ['riscv32-unknown-elf-gcc', '-g', '-march=rv32im', '-std=gnu99
 ```
 2. Para executar as simulações, chame o script:
 ```
-python3 scripts/execute_tests.py
+python3 test/scripts/execute_tests.py
 ```
 3. Os logs de saída ficarão na pasta `test_log`
 
